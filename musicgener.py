@@ -5,7 +5,7 @@ import time
 start_time = time.time()
 
 model = MusicGen.get_pretrained('melody')
-model.set_generation_params(duration=50)  # generate 8 seconds.
+model.set_generation_params(duration=49)  # generate 8 seconds.
 
 descriptions = ["classical guitar"]
 wav = model.generate(descriptions)  # generates 3 samples.
